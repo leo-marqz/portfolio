@@ -1,0 +1,27 @@
+﻿
+
+#perfil {
+    width: 90%;
+    max-width: 300px;
+    margin: 40px 20px;
+    border: 2px dashed black;
+    border-radius: 50%;
+}
+
+#image-dotnet{
+    width: 25rem;
+}
+
+.lm-container-welcome-section {
+    /*background: #4E4D5F;*/
+}
+
+.lm-welcome-section {
+    border-radius: 10px;
+    margin: 60px 0px;
+    color: white;
+}
+
+.lm-welcome-section h1{
+    margin-bottom: 20px;
+}
