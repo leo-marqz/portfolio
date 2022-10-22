@@ -1,7 +1,17 @@
+using Portafolio.Models;
+using Portafolio.Services;
+using Portafolio.Services.Examples;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddTransient<IProjectRepository, ProjectRepository>();
+
+//examples
+//builder.Services.AddTransient<TransitoryService>();
+//builder.Services.AddScoped<DelimitedService>();
+//builder.Services.AddSingleton<UniqueService>();
 
 var app = builder.Build();
 

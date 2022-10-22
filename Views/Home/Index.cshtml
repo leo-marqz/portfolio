@@ -2,11 +2,19 @@
 el controlador*@
 @*@model Person*@
 
+@model HomeIndexViewModel
+
 @{
     ViewData["Title"] = "Home";
 }
+
+@*<h1>UniqueService: @Model.ExampleGuid.Unique</h1>
+<h1>DelimitedService: @Model.ExampleGuid.Delimited</h1>
+<h1>TransitoryService: @Model.ExampleGuid.Transitory</h1>*@
 
 
 <partial name="_Presentation" />
 
 <partial name="_Skills" />
+
+<partial name="_Projects" model="Model.Projects" />
