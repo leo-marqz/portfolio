@@ -18,10 +18,42 @@
 
 .lm-welcome-section {
     border-radius: 10px;
-    margin: 60px 0px;
+    margin: 5rem 0px;
     color: white;
 }
 
 .lm-welcome-section h1{
     margin-bottom: 20px;
 }
+
+.lm-header{
+    font-weight:bold;
+}
+
+.lm-icon{
+    font-size:30px;
+}
+.lm-color-orange,
+.lm-icon-cloud{
+    color: #FD971F;
+}
+
+
+.lm-color-blue,
+.ln-icon-backend{
+    color: #002453;
+}
+
+.lm-color-yellow,
+.lm-icon-frontend{
+    color: #E3D164;
+}
+
+.lm-color-orange,
+.lm-color-blue,
+.lm-color-yellow{
+    font-weight:bold;
+}
+
+
+
