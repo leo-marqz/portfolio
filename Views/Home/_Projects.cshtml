@@ -7,27 +7,7 @@
         <h1>Mis Projectos</h1>
         <p>Aqui se presentan algunos de mis proyectos mas destacados</p>
     </div>
-    <div class="container py-3">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            @foreach (var project in Model)
-            {
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="@project.ImageUrl" class="card-img-top" alt="project image" />
-                        <div class="card-body">
-                            <h5 class="card-title">@project.Title</h5>
-                            <p class="card-text">@project.Description/p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="@project.Link"
-                       class="btn btn-primary"
-                       target="_blank"
-                       rel="noopener noreferrer">Visitar</a>
-                        </div>
-                    </div>
-                </div>
-            }
-        </div>
-    </div>
+
+    <partial name="_IterProjects" model="Model" />
 
 }

@@ -27,7 +27,25 @@ namespace Portafolio.Controllers
             return View(model);
         }
 
-        public IActionResult Privacy()
+        public IActionResult Projects()
+        {
+            var projects = this.projectRepository.GetAll();
+            return View(projects);
+        }
+
+        [HttpGet]
+        public IActionResult Contact()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Contact(Contact contact)
+        {
+            return RedirectToAction("Gratitude", "Home"); 
+        }
+
+        public IActionResult Gratitude()
         {
             return View();
         }
